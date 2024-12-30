@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电脑竖屏 手机横屏</title>
+    <style>
+        /* 默认样式（假设为电脑端竖屏） */
+        body {
+            background-color: lightblue;
+            font-family: Arial, sans-serif;
+            color: black;
+        }
+
+        /* 电脑端竖屏 */
+        @media (min-width: 1024px) and (orientation: portrait) {
+            body {
+                background-color: lightblue; /* 电脑端竖屏的背景颜色 */
+            }
+        }
+
+        /* 手机端横屏 */
+        @media (max-width: 768px) and (orientation: landscape) {
+            body {
+                background-color: lightgreen; /* 手机端横屏时的背景颜色 */
+            }
+        }
+
+        /* 手机端竖屏 */
+        @media (max-width: 768px) and (orientation: portrait) {
+            body {
+                background-color: lightcoral; /* 手机端竖屏时的背景颜色 */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>设备识别示例</h1>
+    <p>不同设备和方向下，背景色会发生变化。</p>
+</body>
+</html>
